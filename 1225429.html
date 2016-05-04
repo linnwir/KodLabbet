@@ -1,0 +1,33 @@
+
+<script src="http://spelprogrammering.nu/simple.js">
+  
+  var color = "red";
+  var size = 20;
+    
+  function update()
+  {
+  	 if (mouse.left) /*test*/
+     	{
+   	        circle(mouse.x, mouse.y, size, color);
+   	        
+   	         if(keyboard.s)
+              	circle(mouse.x, mouse.y, 50, color);
+     	}
+            
+        	if(keyboard.o)
+          		color = "olive";
+        	if(keyboard.b)
+         		 color = "blue";
+        	if(keyboard.g)
+          		color = "green";
+        	if(keyboard.x)
+          		color = "#008080";
+    		if(keyboard.y)
+    			color = mixColor(139, 0 ,0);
+			if(keyboard.c)
+    			clearScreen();
+    		/*if(keyboard.p)
+    			size = 50;*/
+
+  }
+  </script>

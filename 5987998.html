@@ -1,0 +1,47 @@
+Hej:)
+
+<script src="http://koda.nu/simple.js">
+
+  circle(100, 100, 20, "red");
+
+</script>
+
+<script src="http://spelprogrammering.nu/simple.js">
+
+  	var color = "#008080";
+  	var size = 20;
+   
+	var color1 = prompt("mata in första värdet mellan 0 - 255");
+	var color2 = prompt("mata in andra värdet mellan 0 - 255");
+	var color3 = prompt("mata in tredje värdet mellan 0 - 255");
+
+  
+  function update()
+  {
+  	 if (mouse.left) /*test*/
+     	{
+   	        //circle(mouse.x, mouse.y, size, color);
+          rectangle(mouse.x, mouse.y, 20, 20, color);
+   	        
+   	         if(keyboard.s)
+              	circle(mouse.x, mouse.y, 70, color);
+     	}
+   // circle(mouse.x, mouse.y, size, color);
+            
+        	if(keyboard.o)
+          		color = "olive";
+        	if(keyboard.b)
+         		color = mixColor(color1, color2, color3);
+        	if(keyboard.g)
+          		color = "green";
+        	if(keyboard.x)
+          		color = "#008080";
+    		if(keyboard.y)
+    			color = mixColor(139, 0 ,0);
+			if(keyboard.c)
+    			clearScreen();
+    		if(keyboard.p)
+    			size = 50;
+
+  }
+  </script>

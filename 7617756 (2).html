@@ -1,0 +1,30 @@
+<script src="http://koda.nu/simple.js">
+
+  circle(100, 100, 20, "red");
+
+</script>
+
+
+
+<script src="http://spelprogrammering.nu/simple.js">
+  
+  var color = "red";
+    
+  function update()
+  {
+  	 if (mouse.left)
+     	{
+   	        circle(mouse.x, mouse.y, 20, color);
+     	}
+            
+        	if(keyboard.y)
+          		color = "yellow";
+        	if(keyboard.b)
+         		 color = "blue";
+        	if(keyboard.g)
+          		color = "green";
+        	if(keyboard.x)
+          		color = "#AA33df";
+       
+  }
+  </script>
